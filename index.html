@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Imagenes/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="tex-area" id="text-input" name="text-input" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion"> Solo letras minúsculas y sin acentos </h6>
+            </div>
+            <div class="Botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()"> Encriptar </button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()"> Desencriptar </button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje-area" cols="30" rows="10"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="copiarTexto()"> Copiar </button>
+                <button class="btn-limpiar" onclick="limpiarTexto()"> Limpiar </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cuadro de alerta personalizado -->
+    <div id="custom-alert" class="alert-hidden">
+        <div class="alert-content">
+            <p id="alert-text"></p>
+            <button class="alert-button" onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <footer class="desarollado-por">
+        <img class="icono-footer" src= "Imagenes/-428321484.png.jpg" alt="icono"> By: Ruben Hernandez
+        <a href="https://github.com/Hafubooyt" target="_blank">
+            <img class="icono-redes" src="Imagenes/gibhubicon.png" alt="github">
+        </a>
+        <a href="https://www.linkedin.com/in/ruben-hernandez-03898613b/" target="_blank">
+            <img class="icono-redes" src="Imagenes/linkedin-with-circle-icon-2048x2048-np6yltn1.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/hafuboogameryt/" target="_blank">
+            <img class="icono-redes" src="Imagenes/Instagram-Icon.png" alt="instagram">
+        </a>
+    </footer>
+    
+    <script src="/scrip.js"></script>
+</body>
+</html>
+
+
